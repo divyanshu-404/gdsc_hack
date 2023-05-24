@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("./../bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: #33333381;
+  width: 85px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+}
+/*.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+.logo span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}*/
+nav ul {
+  position: relative;
+}
+a {
+  position: relative;
+  color: navajowhite;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+.fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover {
+  background: #9db2bf;
+}
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+.logout {
+  position: absolute;
+  top: 88vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logo {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(50, 205, 182);
+  padding-left: 6px;
+  font-size: 55px;
+  font-weight: 900;
+}
+
+header {
+  background-color: #33333381;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.head {
+  position: relative;
+  left: 53%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  padding-top: 15px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#pomodoro-app {
+  position: absolute;
+  top: 30vh;
+  left: 42vw;
+}
+
+#container {
+  border: 1px solid #333;
+  border-radius: 20px;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background: #33333398;
+}
+
+#timer {
+  color: wheat;
+  font-size: 50px;
+  margin: 10px auto;
+  border: 5px solid wheat;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#time {
+  margin-top: 70px;
+  z-index: 1;
+  position: relative;
+}
+
+#filler {
+  background: #ddffcc;
+  height: 0px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+
+#buttons button {
+  background: #4da6ff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  width: 90px;
+  margin: 10px auto;
+  font-size: 14px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#buttons button#shortBreak {
+  background: #0c0;
+}
+
+#buttons button#longBreak {
+  background: #080;
+}
+
+#buttons button#stop {
+  background: #f00;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="background" id="background"></div>
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h1>Task <span class="grey">Tastic</span></h1>
+        </div>
+      </div>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login</div>
+        <div class="title signup">Signup</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login" id="login-form">
+            <div class="field">
+              <input id="username" type="text" placeholder="UserName" required />
+            </div>
+            <div class="field">
+              <input id="password" type="password" placeholder="Password" required />
+            </div>
+            <div class="fail" id="fail">*invalid credentials</div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div id="login-button" class="field btn">
+              <div class="btn-layer"></div>
+              <button type ="submit">Login</button>
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+            </div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="UserName" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required />
+            </div>
+            <div id="signup-button" class="field btn">
+              <div class="btn-layer"></div>
+              <button type="submit">Signup</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

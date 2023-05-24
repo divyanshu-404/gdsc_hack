@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="music.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Study Helper Game</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">TT</div>
+      <ul>
+        <li>
+          <a href="./../home page/home_page.html">
+            <i class="fas fa-home"></i>
+            <span class="nav-item">Home</span></a
+          >
+        </li>
+
+        <li>
+          <a href="./../pomodoro/pomodoro.html">
+            <i class="fas fa-hourglass"></i>
+            <span class="nav-item">Timer</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-headphones"></i>
+            <span class="nav-item">Music</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">Progress</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="nav-item">Calender</span>
+          </a>
+        </li>
+        <li>
+          <a href="./../login/login.html" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item"> Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="head">
+        <h1>Soothing Music</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="buttons">
+        <button onclick="playMusic('rain.mp3')">Rain</button>
+        <button onclick="playMusic('forest.mp3')">Forest</button>
+        <button onclick="playMusic('cafe.mp3')">Cafe</button>
+        <button onclick="playMusic('peace.mp3')">Peace</button>
+        <button onclick="playMusic('ocean.mp3')">Ocean</button>
+      </div>
+      <div class="controls">
+        <button
+          id="playPauseButton"
+          onclick="togglePlayPause()"
+          class="play-button"
+        >
+          <p>Play</p>
+        </button>
+      </div>
+    </div>
+    <script src="music.js"></script>
+  </body>
+</html>

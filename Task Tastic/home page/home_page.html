@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">TT</div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span class="nav-item">Home</span></a
+          >
+        </li>
+        <li>
+          <a href="./../pomodoro/pomodoro.html">
+            <i class="fas fa-hourglass"></i>
+            <span class="nav-item">Timer</span></a
+          >
+        </li>
+        <li>
+          <a href="./../music/music.html">
+            <i class="fas fa-headphones"></i>
+            <span class="nav-item">Music</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">Progress</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="nav-item">Calender</span>
+          </a>
+        </li>
+        <li>
+          <a href="./../login/login.html" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item"> Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="head">
+        <h1>Welcome to Task Tastic</h1>
+      </div>
+      <div id="user-info">
+        <span id="username">Username</span>
+
+        <button id="logout-btn" hidden>Logout</button>
+      </div>
+    </header>
+    <div class="container">
+      <span id="completed-tasks">Tasks Completed: 0</span>
+      <div id="task-form">
+        <h2>Add a Task</h2>
+        <input type="text" id="task-name" placeholder="Task Name" />
+        <select title="Category" id="category">
+          <option value="" selected disabled hidden>Category</option>
+          <option value="Study">Study</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Health">Health</option>
+        </select>
+        <select title="Priority" id="priority">
+          <option value="" selected disabled hidden>Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div id="task-filter">
+        <h2>Filter Tasks</h2>
+        <select title="category-filter" id="category-filter">
+          <option value="" selected disabled hidden>Category</option>
+          <option value="All">All Categories</option>
+          <option value="Study">Study</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Health">Health</option>
+        </select>
+        <select title="priority-filter" id="priority-filter">
+          <option value="" selected disabled hidden>Priority</option>
+          <option value="All">All Priorities</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button id="filter-btn">Apply Filter</button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+    <script src="home_page.js"></script>
+  </body>
+</html>
